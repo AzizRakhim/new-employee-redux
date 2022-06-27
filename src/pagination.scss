@@ -1,0 +1,53 @@
+.pagination{
+  height: 100%;
+  min-height: 54px;
+}
+
+.pagination__page{
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+
+.pagination__select{
+  margin-left: 8px;
+  margin-right: 32px;
+  border: none;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.pagination__nums{
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+
+.pagination__l{
+  margin-right: 5px;
+}
+
+.pagination__r{
+  margin-left: 5px;
+}
+
+.pagination__btns{
+  margin-left: 20px;
+
+  button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    .bx{
+      font-size: 25px;
+    }
+  }
+}

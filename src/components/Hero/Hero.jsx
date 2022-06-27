@@ -9,6 +9,9 @@ import Title from './Title/Title';
 function Hero() {
   let [search, setSearch] = useState([]);
 
+  const [pagnitionCount, setPagnitionCount] = useState(5)
+  const [pagnitionID, setPagnitionID] = useState(1)
+
   return (
     <section id="hero" className="hero d-flex">
       <div className="hero__left" />
@@ -17,7 +20,14 @@ function Hero() {
         <Title />
         <div className="hero__info">
           <Search search={search} setSearch={setSearch} />
-          <Table search={search} setSearch={setSearch} />
+          <Table 
+            search={search} 
+            setSearch={setSearch}
+            pagnitionCount={pagnitionCount}
+            setPagnitionCount={setPagnitionCount}
+            pagnitionID={pagnitionID}
+            setPagnitionID={setPagnitionID}
+          />
         </div>
       </div>
     </section>
