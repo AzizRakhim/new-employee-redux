@@ -1,0 +1,22 @@
+.hero__left{
+  width: 320px;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #253053;
+}
+
+.hero__right{
+  width: 100%;
+  padding-left: 320px;
+}
+
+.hero__info{
+  margin: 40px;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+  border-radius: 4px;
+}

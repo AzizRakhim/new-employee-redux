@@ -1,0 +1,41 @@
+.hero__employee{
+  padding: 32px;
+  margin-bottom: 16px;
+  background-color: #fdfdff;
+  margin-top: 64px;
+}
+
+.hero__employee-icon-box{
+  color: #3c44b1;
+  display: inline-block;
+  padding: 16px;
+  box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+  border-radius: 4px;
+
+  svg{
+    fill: #3c44b1;
+    width: 1em;
+    height: 1em;
+    font-size: 2.1875rem;
+  }
+}
+
+.hero__employee-box{
+  padding-left: 32px;
+}
+
+.hero__employee-title{
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  margin-bottom: 0;
+}
+
+.hero__employee-text{
+  opacity: 0.6;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+}

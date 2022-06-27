@@ -1,0 +1,120 @@
+.modal-dialog{
+  min-width: 960px;
+  margin-top: 70px !important; 
+}
+
+.smth{
+  padding: 16px 24px;
+}
+
+.hero__modal-box{
+  padding: 16px 24px;
+}
+
+.hero__modal-radio{
+  padding: 16px 24px;
+}
+
+.hero__modal-input-box{
+  width: 80%;
+  margin: 8px;
+
+  input{
+    padding: 18.5px 14px;
+    width: 100%;
+  }
+}
+
+.gender{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+  margin: 5px;
+}
+
+.form-check{
+  margin-bottom: 15px;
+}
+
+.input-department{
+  padding: 18.5px 14px;
+  margin-bottom: 15px;
+}
+
+input[type="date"]{
+  width: 100%;
+  padding: 18.5px 14px;
+}
+
+.date-class{
+  margin-bottom: 15px;
+}
+
+.modal-submit-btn{
+  background-color: rgb(35, 39, 105);
+  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f;
+  margin: 4px;
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.edit-submit{
+  background-color: rgb(35, 39, 105);
+  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f;
+  margin: 4px;
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.modal-reset-btn{
+  background-color: #f4f4f4;
+  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f;
+  margin: 4px;
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  border: none;
+}
+
+.hero__pen{
+  border: none;
+  border-radius: 4px;
+  background-color: #3c44b126 !important;
+  margin: 4px;
+  padding: 6px 8px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__close{
+  border: none;
+  border-radius: 4px;
+  background-color: #f8324526;
+  margin: 4px;
+  padding: 6px 8px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color:  #f83245;
+}
