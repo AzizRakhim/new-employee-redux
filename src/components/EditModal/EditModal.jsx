@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import "../Modal/Modal.scss";
 import { editEmployee } from '../../store/EmployeeContext/EmployeeSlice';
+import TextField from '@mui/material/TextField';
+import RowRadioButtonsGroup from '../Modal/Radio';
+import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, InputLabel, MenuItem, Select } from '@mui/material';
 
 function EditModal({id}) {
   const dispatch = useDispatch();
@@ -49,103 +52,110 @@ function EditModal({id}) {
             <form className="inner-modal-form d-flex">
               <div className="hero__modal-box col-6">
                 <div className="hero__modal-input-box">
-                  <input 
-                    type="text" className="hero__modal-input input-name" 
-                    name="full name" 
-                    placeholder="Full Name" 
-                    required 
+                  <TextField 
+                    id="outlined-edit-name" 
+                    label="Full Name" 
+                    variant="outlined" 
+                    name="full name"
+                    type={"text"}
+                    className="hero__modal-input input-name mb-2"
+                    fullWidth
                     value={tempObj.name}
                     onChange={(e) => setTempObj({...tempObj, name : e.target.value})}
                   />
-                  <p className="name-hint hint" />
                 </div>
                 <div className="hero__modal-input-box">
-                  <input 
-                    type="email" className="hero__modal-input input-email" 
-                    name="email" 
-                    placeholder="Email" 
-                    required 
+                  <TextField 
+                    id="outlined-edit-email" 
+                    label="Email" 
+                    type={"email"}
+                    variant="outlined" 
+                    name="email"
+                    className="hero__modal-input input-name mb-2"
+                    fullWidth
                     value={tempObj.email}
                     onChange={(e) => setTempObj({...tempObj, email : e.target.value})}
                   />
-                  <p className="email-hint hint" />
                 </div>
                 <div className="hero__modal-input-box">
-                  <input 
-                    type="tel" className="hero__modal-input input-phone" 
-                    name="phone" 
-                    placeholder="Phone" 
-                    required 
+                  <TextField 
+                    id="outlined-edit-number" 
+                    label="Mobile" 
+                    variant="outlined" 
+                    name="tel"
+                    type={"tel"}
+                    className="hero__modal-input input-name mb-2"
+                    fullWidth
                     value={tempObj.number}
                     onChange={(e) => setTempObj({...tempObj, number : e.target.value})}
                   />
-                  <p className="phone-hint hint" />
                 </div>
                 <div className="hero__modal-input-box">
-                  <input 
-                    type="text" className="hero__modal-input city-input" 
-                    name="city" 
-                    placeholder="City" 
+                  <TextField 
+                    id="outlined-edit-city" 
+                    label="City" 
+                    variant="outlined" 
+                    name="city"
+                    type={"text"}
+                    className="hero__modal-input input-name mb-2"
+                    fullWidth
                     value={tempObj.city}
                     onChange={(e) => setTempObj({...tempObj, city : e.target.value})}
                   />
                 </div>
               </div>
               <div className="hero__modal-radio col-6">
-                <div>
-                  <p className="gender">Gender</p>
-                  <div className="form-check form-check-inline">
-                    <input 
-                      className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" defaultValue="option1" defaultChecked 
-                    />
-                    <label className="form-check-label" htmlFor="inlineRadio1">Male</label>
-                  </div>
-                  <div className="form-check form-check-inline">
-                    <input 
-                      className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" defaultValue="option2" />
-                    <label className="form-check-label" htmlFor="inlineRadio2">Female</label>
-                  </div>
-                  <div className="form-check form-check-inline">
-                    <input 
-                      className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" defaultValue="option3" />
-                    <label className="form-check-label" htmlFor="inlineRadio3">Other</label>
-                  </div>
-                </div>
-                <div>
-                  <input 
-                    className="form-control input-department" list="datalistOptions" id="exampleDataList" placeholder="Department" 
-                    required 
+                <RowRadioButtonsGroup />
+                <FormControl fullWidth className='mb-3'>
+                  <InputLabel id="demo-simple-edit-label">
+                    Department
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-edit-label"
+                    id="demo-simple-select"
+                    value={tempObj.department}
+                    label="Department"
                     onChange={(e) => setTempObj({...tempObj, department : e.target.value})}
-                  />
-                  <datalist id="datalistOptions" onChange={(e) => setTempObj({...tempObj, department : e.target.value})}>
-                    <option value="None">
-                    </option><option value="Development">
-                    </option><option value="Marketing">
-                    </option><option value="Accounting">
-                    </option><option value="HR">
-                    </option></datalist> 
-                </div>
+                  >
+                    <MenuItem value={"None"}>
+                      None
+                    </MenuItem>
+                    <MenuItem value={"Development"}>
+                      Development
+                    </MenuItem>
+                    <MenuItem value={"Marketing"}>
+                      Marketing
+                    </MenuItem>
+                    <MenuItem value={"Accounting"}>
+                      Accounting
+                    </MenuItem>
+                    <MenuItem value={"HR"}>
+                      HR
+                    </MenuItem>
+                  </Select>
+                </FormControl>
                 <div className="date-class">
                   <input type="date" defaultValue="2017-06-01" />
                 </div>
+                <FormGroup>
+                  <FormControlLabel control={<Checkbox />} label="Permanent Employee" />  
+                </FormGroup>
                 <div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
-                    <label className="form-check-label" htmlFor="flexCheckDefault">
-                      Permanent Employee
-                    </label>
-                  </div>
-                </div>
-                <div>
-                  <button 
-                    type="submit" className="modal-submit-btn" data-bs-dismiss="modal"
+                  <Button 
+                    variant="contained"
+                    type="button" 
+                    className="modal-submit-btn" data-bs-dismiss="modal"
                     onClick={editHandler}
                   >
                     Submit
-                  </button>
-                  <button type="submit" className="modal-reset-btn" disabled>
+                  </Button>
+                  <Button 
+                    variant="contained"
+                    type="button" 
+                    className="modal-reset-btn" data-bs-dismiss="modal"
+                  >
                     Reset
-                  </button>
+                  </Button>
                 </div>
               </div>
             </form>

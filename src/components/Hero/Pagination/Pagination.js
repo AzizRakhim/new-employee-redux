@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "./pagination.scss";
+import "./Pagination.scss";
 
 function Pagination({pagnitionCount, setPagnitionCount, pagnitionID, setPagnitionID, search}) {
     const [num, setNum] = useState(search.length / pagnitionCount)
@@ -20,7 +20,7 @@ function Pagination({pagnitionCount, setPagnitionCount, pagnitionID, setPagnitio
     }
   
     const pagNextFunc = () => {
-      if (fnum > count) {
+      if (fnum >= count) {
         setCount((n) => n + 1)
         setPagnitionID(pagnitionID + pagnitionCount)
       }

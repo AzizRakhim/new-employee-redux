@@ -53,17 +53,17 @@ input[type="date"]{
 }
 
 .modal-submit-btn{
-  background-color: rgb(35, 39, 105);
-  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f;
-  margin: 4px;
-  padding: 8px 22px;
-  font-size: 0.9375rem;
-  color: #fff;
-  font-weight: 500;
-  line-height: 1.75;
-  border-radius: 4px;
-  letter-spacing: 0.02857em;
-  text-transform: uppercase;
+  background-color: rgb(35, 39, 105) !important;
+  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f !important;
+  margin: 4px !important;
+  padding: 8px 22px !important;
+  font-size: 0.9375rem !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  line-height: 1.75 !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.02857em !important;
+  text-transform: none !important;
 }
 
 .edit-submit{
@@ -81,18 +81,17 @@ input[type="date"]{
 }
 
 .modal-reset-btn{
-  background-color: #f4f4f4;
-  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f;
-  margin: 4px;
-  padding: 8px 22px;
-  font-size: 0.9375rem;
-  color: #000;
-  font-weight: 500;
-  line-height: 1.75;
-  border-radius: 4px;
-  letter-spacing: 0.02857em;
-  text-transform: uppercase;
-  border: none;
+  background-color: #f4f4f4 !important;
+  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f !important;
+  margin: 4px !important;
+  padding: 8px 22px !important;
+  font-size: 0.9375rem !important;
+  color: #000 !important;
+  font-weight: 500 !important;
+  line-height: 1.75 !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.02857em !important;
+  border: none !important;
 }
 
 .hero__pen{

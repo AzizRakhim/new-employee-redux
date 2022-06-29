@@ -60,3 +60,13 @@ tr{
     cursor: pointer;
   }
 }
+
+.confirm-box{
+  position: fixed;
+
+  button{
+    padding: 10px;
+    border: none;
+    background: transparent;
+  }
+}

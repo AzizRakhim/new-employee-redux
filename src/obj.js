@@ -5,6 +5,7 @@ let obj = [
     email: 'husan@gmail.com',
     number: "+998 90 717 49 09",
     department: 'Development',
+    city : "Valley Grove"
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ let obj = [
     email: 'ali@gmail.com',
     number: "+998 98 300 80 81",
     department: 'Marketing',
+    city : "Guthrie Center"
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ let obj = [
     email: 'jam@gmail.com',
     number: "+998 90 350 37 37",
     department: 'Accounting',
+    city : "Haddon Heights"
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ let obj = [
     email: 'hasan@gmail.com',
     number: "+998 90 235 19 89",
     department: 'HR',
+    city : "Phoenix Lake"
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ let obj = [
     email: 'akbarali@gmail.com',
     number: "+998 90 356 76 01",
     department: 'Development',
+    city : "Lindcove"
   },
   {
     id: 6,
@@ -40,28 +45,8 @@ let obj = [
     email: 'tursunboy@gmail.com',
     number: "+998 90 902 08 29",
     department: 'Marketing',
-  },
-  {
-    id: 7,
-    name: 'Joraqul',
-    email: 'joraqul@gmail.com',
-    number: "+998 90 356 76 02",
-    department: 'Accounting',
-  },
-  {
-    id: 6,
-    name: 'Tursunboy',
-    email: 'tursunboytwo@gmail.com',
-    number: "+998 90 189 97 50",
-    department: 'HR',
-  },
-  {
-    id: 7,
-    name: 'Joraqul',
-    email: 'joraqultwo@gmail.com',
-    number: "+998 90 915 02 99",
-    department: 'Development',
-  },
+    city : "Zionsville"
+  }
 ];
 
 export default obj;
